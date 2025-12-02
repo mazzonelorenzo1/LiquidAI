@@ -1,5 +1,5 @@
 # LiquidAI
-Audio chat with Liquid AI
+Audio chat with Liquid AI.
 
 That's a small and simple example of audio conversation with a Liquid AI model.
 Before running it, make sure to install the proper packages with the terminal, you can find them in the "Packages" repository.
