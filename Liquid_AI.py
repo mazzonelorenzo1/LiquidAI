@@ -1,4 +1,4 @@
-# Install the proper packages before running the code, you can find them in the README file
+# Install the proper packages before running the code, you can find them in the Packages.py file
 # I suggest to run this code on Google Colab with the GPU runtime enabled to avoid problems with CUDA
 
 import torch
