@@ -20,7 +20,7 @@ chat.end_turn()
 
 chat.new_turn("user")
 
-# Fix the demo file with the proper directory
+# Fix the demo file with the proper directory path
 wav, sampling_rate = torchaudio.load("/content/Liquid_question.m4a")
 
 # Convert stereo to mono if necessary
@@ -62,7 +62,7 @@ chat.end_turn()
 # Start second turn
 chat.new_turn("user")
 
-# Fix the demo file with the proper directory
+# Fix the demo file with the proper directory path
 wav, sampling_rate = torchaudio.load("/content/GPU_question.m4a")
 if wav.shape[0] > 1:
     wav = wav.mean(dim=0, keepdim=True)
@@ -88,7 +88,7 @@ torchaudio.save("answer_GPU.wav", waveform.cpu(), 24_000)
 # Start third turn
 chat.new_turn("user")
 
-# Fix the demo file with the proper directory
+# Fix the demo file with the proper directory path
 wav, sampling_rate = torchaudio.load("/content/Cuda_error.m4a")
 if wav.shape[0] > 1:
     wav = wav.mean(dim=0, keepdim=True)
