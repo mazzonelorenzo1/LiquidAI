@@ -69,7 +69,7 @@ It already includes:
 How to use it:
 
 1 - Open the notebook in Google Colab
-2- Go to Runtime → Change runtime type
+2 - Go to Runtime → Change runtime type
 3 - Select GPU
 4 - Run all cells sequentially
 
