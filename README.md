@@ -58,23 +58,20 @@ Make sure you update the audio file paths inside the script according to your lo
 A ready-to-use Jupyter notebook is provided in the repository (LiquidAI.ipynb).
 It already includes:
 
-environment setup
+- environment setup
 
-required installations
+- required installations
 
-model loading
+- model loading
 
-full audio conversation workflow
+- full audio conversation workflow
 
 How to use it:
 
-Open the notebook in Google Colab
-
-Go to Runtime → Change runtime type
-
-Select GPU
-
-Run all cells sequentially
+1 - Open the notebook in Google Colab
+2- Go to Runtime → Change runtime type
+3 - Select GPU
+4 - Run all cells sequentially
 
 This method requires no local installation and is ideal for quick testing or for users without a local CUDA-enabled device.
 
@@ -106,19 +103,14 @@ Generated tokens are streamed in real time to the terminal.
 The model generates audio that is decoded and saved as .wav files:
 
 answer_Liquid.wav
-
 answer_GPU.wav
-
 answer_Cuda.wav
-
 answer_solution.wav
 
 You can evaluate the results by:
 
-Listening to the generated .wav files
-
-Reviewing the printed text response
-
+Listening to the generated .wav files,
+Reviewing the printed text response,
 Inspecting the flow of turns in the terminal
 
 7. Repository Structure
