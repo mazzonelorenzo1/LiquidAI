@@ -69,8 +69,11 @@ It already includes:
 How to use it:
 
 1 - Open the notebook in Google Colab
+
 2 - Go to Runtime → Change runtime type
+
 3 - Select GPU
+
 4 - Run all cells sequentially
 
 This method requires no local installation and is ideal for quick testing or for users without a local CUDA-enabled device.
