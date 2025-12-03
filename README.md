@@ -14,23 +14,23 @@ If you do not have a local NVIDIA GPU, you can run the project using the include
 
 Follow these steps to set up a clean and isolated environment on your local machine.
 
-Step 1 — Install Conda
+Step 1 - Install Conda
 
 Download Miniconda or Anaconda:
 
 https://docs.conda.io/en/latest/miniconda.html
 
-Step 2 — Create a dedicated environment
+Step 2 - Create a dedicated environment
 ```bash
 conda create --name liquid python=3.12
 ```
 
-Step 3 — Activate the environment
+Step 3 - Activate the environment
 ```bash
 conda activate liquid
 ```
 
-Step 4 — Install all required packages
+Step 4 - Install all required packages
 
 All dependencies are listed in Requirements.txt:
 
@@ -38,7 +38,7 @@ All dependencies are listed in Requirements.txt:
 pip install -r Requirements.txt
 ```
 
-Optional — Enable CUDA debugging
+Optional - Enable CUDA debugging
 
 If needed, add this at the top of the script:
 
