@@ -1,5 +1,5 @@
 # LiquidAI
-README – Liquid AI Audio Chat Demo
+README – Liquid AI Audio Chat
 
 This repository provides a minimal, reproducible example demonstrating how to run an audio-based conversation using the Liquid AI LFM2-Audio-1.5B model.
 The project includes Python scripts, a Colab notebook, and sample audio files to help you test the model quickly on any GPU-enabled setup.
@@ -17,40 +17,45 @@ Follow these steps to set up a clean and isolated environment on your local mach
 Step 1 — Install Conda
 
 Download Miniconda or Anaconda:
+
 https://docs.conda.io/en/latest/miniconda.html
 
 Step 2 — Create a dedicated environment
+```bash
 conda create --name liquid python=3.12
+```
 
 Step 3 — Activate the environment
+```bash
 conda activate liquid
+```
 
 Step 4 — Install all required packages
 
-All dependencies are listed in requirements.txt:
+All dependencies are listed in Requirements.txt:
 
-pip install -r requirements.txt
+```bash
+pip install -r Requirements.txt
+```
 
 Optional — Enable CUDA debugging
 
 If needed, add this at the top of the script:
 
+```python
 import os
 os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
+```
 
 3. Running the Demo (Local GPU)
 
-The main script is located in the Liquid_AI directory (liquid_demo.py).
-To execute the full audio conversation pipeline:
-
-python liquid_demo.py
-
+The main script is located in the Liquid_AI.py directory.
 
 Make sure you update the audio file paths inside the script according to your local directory structure.
 
 4. Running the Demo on Google Colab (GPU Runtime Enabled)
 
-A ready-to-use Jupyter notebook is provided in the repository.
+A ready-to-use Jupyter notebook is provided in the repository (LiquidAI.ipynb).
 It already includes:
 
 environment setup
@@ -82,9 +87,11 @@ Replace them freely with your own .wav or .m4a files.
 
 Example:
 
+```python
 wav, sampling_rate = torchaudio.load(
     "C:/Users/.../Liquid_Q&A/Liquid_question.m4a"
 )
+```
 
 6. Output and Evaluation
 
@@ -118,7 +125,7 @@ Inspecting the flow of turns in the terminal
 Liquid_AI/          → Main Python script (liquid_demo.py)
 Liquid_Q&A/         → Sample audio questions
 Liquid_Colab/       → Google Colab notebook for GPU execution
-Packages/           → Requirements list
+Requirements/       → Requirements list
 README.md           → Documentation
 
 8. Notes and Recommendations
@@ -128,5 +135,3 @@ A GPU with CUDA is required for reliable performance.
 Use the Colab notebook if you do not have access to a local NVIDIA GPU.
 
 Always verify that your audio file paths are correct before running the script.
-
-The model is large; expect slow startup times on smaller GPUs.
