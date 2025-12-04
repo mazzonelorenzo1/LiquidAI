@@ -117,11 +117,12 @@ Reviewing the printed text response,
 Inspecting the flow of turns in the terminal
 
 7. Repository Structure
-Liquid_AI/          → Main Python script (liquid_demo.py)
+   
+Liquid_AI/          → Main Python script
 
 Liquid_Q&A/         → Sample audio questions
 
-Liquid_Colab/       → Google Colab notebook for GPU execution
+LiquidAI_Colab/     → Google Colab notebook for GPU execution
 
 Requirements/       → Requirements list
 
