@@ -118,12 +118,16 @@ Inspecting the flow of turns in the terminal
 
 7. Repository Structure
 Liquid_AI/          → Main Python script (liquid_demo.py)
+
 Liquid_Q&A/         → Sample audio questions
+
 Liquid_Colab/       → Google Colab notebook for GPU execution
+
 Requirements/       → Requirements list
+
 README.md           → Documentation
 
-8. Notes and Recommendations
+9. Notes and Recommendations
 
 A GPU with CUDA is required for reliable performance.
 
